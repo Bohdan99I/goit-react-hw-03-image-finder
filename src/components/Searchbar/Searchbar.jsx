@@ -20,6 +20,7 @@ export class Searchbar extends Component {
 
   onSubmit = event => {
     event.preventDefault();    
+    if (this.state.value) {}
     this.props.onSubmit(this.state.value);
     this.setState({ value: '' });
     event.currentTarget.reset();
